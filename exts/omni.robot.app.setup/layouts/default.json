@@ -1,0 +1,95 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "dock_id": 6,
+                    "height": 525.5999755859375,
+                    "position_x": 44.0,
+                    "position_y": 21.600000381469727,
+                    "selected_in_dock": true,
+                    "title": "Viewport",
+                    "visible": true,
+                    "width": 1142.4000244140625
+                  }
+                ],
+                "dock_id": 6,
+                "position": "RIGHT"
+              }
+            ],
+            "dock_id": 3,
+            "position": "TOP"
+          },
+          {
+            "children": [
+              
+              {
+                "children": [
+                  {
+                    "dock_id": 8,
+                    "height": 525.5999755859375,
+                    "position_x": 44.0,
+                    "position_y": 21.600000381469727,
+                    "selected_in_dock": true,
+                    "title": "Console",
+                    "visible": true,
+                    "width": 1142.4000244140625
+                  }
+                ],
+                "dock_id": 8,
+                "position": "LEFT"
+              },
+              {
+                "children": [
+                  {
+                    "dock_id": 9,
+                    "height": 525.5999755859375,
+                    "position_x": 44.0,
+                    "position_y": 21.600000381469727,
+                    "selected_in_dock": true,
+                    "title": "Robot",
+                    "visible": true,
+                    "width": 1142.4000244140625
+                  }
+                ],
+                "dock_id": 9,
+                "position": "RIGHT"
+              }
+            ],
+            "dock_id": 4,
+            "position": "BOTTOM"
+          }
+        ],
+        "dock_id": 1,
+        "position": "LEFT"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "dock_id": 7,
+                "height": 375.20001220703125,
+                "position_x": 1188.800048828125,
+                "position_y": 21.600000381469727,
+                "selected_in_dock": false,
+                "visible": true,
+                "width": 511.20001220703125
+              }
+            ],
+            "dock_id": 7,
+            "position": "TOP"
+          }
+        ],
+        "dock_id": 2,
+        "position": "RIGHT"
+      }
+    ],
+    "dock_id": 3358485147
+  }
+]

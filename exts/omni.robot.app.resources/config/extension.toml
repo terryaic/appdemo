@@ -1,0 +1,6 @@
+[package]
+title = "Omniverse Robot Resources"
+description = "This Extension contains resources (images, icons) used by Robot and splash screen."
+version = "0.1.0"
+
+authors = ["NVIDIA"]

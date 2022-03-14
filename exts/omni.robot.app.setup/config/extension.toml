@@ -1,0 +1,28 @@
+[package]
+title = "Omniverse Robot Setup Extension"
+description = "This Extension does the final setup of the Kit Create Apps"
+version = "0.2.0"
+
+authors = ["NVIDIA"]
+
+[dependencies]
+"omni.usd" = {}
+"omni.ui" = {}
+
+# Create Core Extensions 
+"omni.kit.search.service" = {}
+"omni.kit.context_menu" = {}
+"omni.kit.selection" = {}
+"omni.kit.stage_templates" = {}
+"omni.kit.window.title" = {}
+"omni.kit.quicklayout" = {}
+
+[[python.module]]
+name = "omni.robot.app.setup"
+
+[[python.module]]
+name = "omni.robot.app.setup.tests"
+
+[[test]]
+
+timeout = 400

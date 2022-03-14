@@ -1,0 +1,70 @@
+[package]
+title = "World"
+description = "A robot coding platform for kids"
+version = "2022.3"
+
+# That makes it browsable in UI with "app" filter
+keywords = ["app"]
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.kit.renderer.core" = {}
+
+"omni.kit.window.viewport" = {}
+"omni.renderer" = { tag = "rtx" }
+"omni.hydra.rtx" = {}
+"omni.usd" = { order = -100}
+
+"omni.kit.renderer.capture" = {} # Needed for viewport capture
+
+"omni.robot.app.resources" = {}
+"omni.robot.app.setup" = { order = 1000 } # we are running that at the end
+"omni.kit.splash" = { order = -5000}
+
+"omni.kit.window.console" = {}
+"omni.hello.sample" = { order = 900 }
+
+## PhysX
+"omni.physx.bundle" = {}
+
+## Web Streaming
+"omni.kit.livestream.core" = {}
+"omni.kit.livestream.webrtc" = {}
+"omni.services.streamclient.webrtc" = {}
+
+[settings]
+app.settings.standalone_mode = true
+
+# Setting the port for the embedded http server
+exts."omni.services.transport.server.http".port = 8112
+
+exts."omni.kit.window.splash".imagePath = "${omni.robot.app.resources}/data/robot@1x.jpg"
+
+
+[settings.app.viewport]
+showCameraMenu = false
+showHideMenu = false
+showLayerMenu = false
+showRendererMenu = false
+showSettingMenu = false
+gpuSynchronization = false
+
+[settings.app.renderer.resolution]
+width = 1280
+height = 720
+
+[settings.app.window]
+title = "World"
+width = 1280
+height = 720
+x = -1
+y = -1
+iconPath = "${omni.robot.app.resources}/data/robot.ico"
+
+# Register extension folder from this repo in kit
+[settings.app.exts]
+folders.'++' = ["${app}/../exts", "${app}/../extscache"]
+
+[settings.app.exts]
+enabled = [
+]

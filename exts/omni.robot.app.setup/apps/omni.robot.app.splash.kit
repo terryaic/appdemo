@@ -1,0 +1,42 @@
+[package]
+title = "Create splash screen"
+description = "Show the Splash Screen for Create"
+version = "2020.3"
+
+# That makes it browsable in UI with "experience" filter
+keywords = ["experience", "extensions"]
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.robot.splash" = {}
+
+
+[settings]
+app.extensions.enabledCore = []
+#app.extensions.excluded = ["omni.client", "omni.usd.libs"]
+
+# OS Window default settings:
+app.window.title = "Create is Starting"
+
+# setup size
+app.window.width = 860
+app.window.height = 500
+# center position
+app.window.x = -1
+app.window.y = -1
+
+# window properties
+app.window.fullscreen = false
+app.window.noDecorations = true
+app.window.alwaysOnTop = false
+app.window.scaleToMonitor = false
+
+# faster load time as not need for RTX
+exts."omni.kit.renderer.core".compatibilityMode = true
+
+# Duration for which each image is shown on the splash screen slideshow (in seconds):
+exts."omni.robot.splash".slide_hold_time = 9.0
+
+# Register extension folder from this repo in kit
+[settings.app.exts]
+folders.'++' = ["${app}/../exts", "${app}/../extscache"]
